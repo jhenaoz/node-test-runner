@@ -6,7 +6,7 @@
   "scripts": {
     "start": "node ./src/index.js",
     "start:debug": "node --inspect ./src/index.js",
-    "test:node-runer": "node --test",
+    "test:node-runner": "node --test",
     "test:jest": "jest --testMatch '**/*.jest.js'",
     "posttest": ""
   },
