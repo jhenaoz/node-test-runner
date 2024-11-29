@@ -6,9 +6,8 @@
   "scripts": {
     "start": "node ./src/index.js",
     "start:debug": "node --inspect ./src/index.js",
-    "test:node-runner": "node --test",
-    "test:jest": "jest --testMatch '**/*.jest.js'",
-    "posttest": ""
+    "test:node-runner": "node --test ./tests/unit/list-user.test.js",
+    "test:jest": "jest ./tests/unit/list-user.jest.test.js"
   },
   "author": "",
   "engines": {
