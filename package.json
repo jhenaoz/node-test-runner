@@ -5,11 +5,19 @@
   "main": "index.js",
   "scripts": {
     "start": "node ./src/index.js",
-    "test": "node "
+    "start:debug": "node --inspect ./src/index.js",
+    "test": "node --test",
+    "posttest": ""
   },
   "author": "",
+  "engines": {
+    "node": ">v22.11.0"
+  },
   "license": "ISC",
   "dependencies": {
     "express": "^4.21.1"
+  },
+  "devDependencies": {
+    "allure-commandline": "^2.32.0"
   }
 }
