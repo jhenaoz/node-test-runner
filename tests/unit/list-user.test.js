@@ -1,7 +1,6 @@
-
-const usersDao = require('../../src/data-access/users.dao');
 const {describe, it, mock, beforeEach} = require("node:test");
 const { deepEqual } = require('node:assert/strict');
+const usersDao = require('../../src/data-access/users.dao');
 
 describe("Given a list of users", () => {
   describe("When the users login to the platform during the last week", () => {
@@ -32,7 +31,7 @@ describe("Given a list of users", () => {
       usersDomain = require('../../src/domain/users.domain.js');
     });
 
-    it("Then they should be present in the active users request", async () => {
+    it("Then they should be present in the active users response", async () => {
       // Arrange
       const userService = new usersDomain();
 
